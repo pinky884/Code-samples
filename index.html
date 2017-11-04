@@ -1,0 +1,17 @@
+<html>
+        <head>
+            <script src="./bower_components/angular/angular.js"></script>
+            <script>
+                var app = angular.module('test',[]);
+                app.controller("helloWorldCtrl",['$scope',function($scope){
+                    this.name = "nagasree";
+                }]);
+            </script>
+        </head>
+        <body ng-app="test">
+            <div ng-controller="helloWorldCtrl">
+                <input type="text" ng-model="name" placeholder="Enter name"/>
+                <h1>Hello {{name}}</h1>
+            </div>
+        </body>
+    </html>
