@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="tempApp">
+<head>
+	<title>Angular JS App</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script> -->
+	<script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="/js/controllers.js"></script>
+	<!-- <script type="text/javascript">
+		var app = angular.module("app",[])
+		.controller("mainCtrl",["$scope",function($scope){
+			$scope.temp = -1;
+		}]);
+
+	</script> -->
+</head>
+<body>
+	<div>
+		<ul class="menu">
+		<li><a href="#/current">Current</a></li>
+		<li><a href="#/history">History</a></li>
+		</ul>
+		<div ng-view></div>
+	</div>
+	<!-- <div ng-controller="mainCtrl">
+		Current Temperature:
+		<input type="text" name="temp" ng-model="temp"/>
+		<span ng-show="temp>17">{{temp}} is pleasant... Another -10 degress would be super chill!</span>
+		<span ng-show="temp <= 17"> {{temp}} is quite chill.... Another +10 degrees would be pleasant...</span>
+	</div> -->
+</body>
+</html>

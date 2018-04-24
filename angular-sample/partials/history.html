@@ -1,0 +1,5 @@
+<p>This is history page!</p>
+<span>{{text}}</span>
+<ul ng-repeat="value in historyData | temparatureFilter">
+	<li>{{value.day | uppercase}} : {{value.temp}}</li>
+</ul>
