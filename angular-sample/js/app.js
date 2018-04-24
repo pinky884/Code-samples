@@ -1,5 +1,5 @@
-var tempApp = angular.module("tempApp",['ngRoute'])
-.config(['$routeProvider',function($routeProvider) {
+var tempApp = angular.module("tempApp",['ui.router'])
+.config(['$urlRouterProvider','$stateProvider',function($urlRouterProvider,$stateProvider) {
 	$routeProvider.when('/current',{
 		templateUrl:'/partials/current.html',
 		controller: 'currentCtrl'
